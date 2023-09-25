@@ -97,6 +97,11 @@ h1{
 }
 /*----------------*/
 section{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#welcomeSection{
     display: block;
 }
 
