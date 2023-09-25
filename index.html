@@ -12,267 +12,291 @@
 
 <body>
 
+    <!----- bandeau supérieur ----->
+            <header>
+    
+                <div class="title">
+                    <h1>Développeur .Net <span id="netAccent">junior</span> </h1>
+                </div>
+    
+    
+                <nav class="navBar">
+                    <ul>
+                        <li><button class="navbBarButton">Accueil</button></li>
+                        <li><button class="navbBarButton">Soft Skills</button></li>
+                        <li><button class="navbBarButton">Parcours</button></li>
+                        <li><button class="navbBarButton">Compétences</button></li>
+                        <li><button class="navbBarButton">Contact</button></li>
+                        <!--<li><button>Hobbies</button></li>-->
+                        <!--<li><button>thèmes</button></li>-->                              
+                    </ul>                                
+                </nav>
+    
+                <div class="bottomBarObject"></div>
+     <!-----           
+                <nav class="hamburgerMenu">
+                    <ul>
+                        <li><button>Accueil</button></li>
+                        <li><button>Soft Skills</button></li>
+                        <li><button>Parcours</button></li>
+                        <li><button>Compétences</button></li>
+                        <li><button>Contact</button></li>
+                        <li><button>Hobbies</button></li>
+                        li><button>thèmes</button></li>                              
+                    </ul>                                
+                </nav> 
+    -->         
+    
+            </header>
     <main>
-<!----- bandeau supérieur ----->
-        <header>
-
-            <div>
-                <h1>Développeur .Net <span id="netAccent">junior</span> </h1>
-            </div>
-
-
-            <nav class="navBar">
-                <ul>
-                    <li><button>Accueil</button></li>
-                    <li><button>Soft Skills</button></li>
-                    <li><button>Parcours</button></li>
-                    <li><button>Compétences</button></li>
-                    <li><button>Contact</button></li>
-                    <!--<li><button>Hobbies</button></li>-->
-                    <!--<li><button>thèmes</button></li>-->                              
-                </ul>                                
-            </nav>
- <!-----           
-            <nav class="hamburgerMenu">
-                <ul>
-                    <li><button>Accueil</button></li>
-                    <li><button>Soft Skills</button></li>
-                    <li><button>Parcours</button></li>
-                    <li><button>Compétences</button></li>
-                    <li><button>Contact</button></li>
-                    <li><button>Hobbies</button></li>
-                    li><button>thèmes</button></li>                              
-                </ul>                                
-            </nav> 
--->         
-
-        </header>
 
 <!----- section accueil ----->
-        <section id="sectionAccueil">
+        <section id="welcomeSection">
         
             <div>
-                <p>Bienvenue</p>
-                <p>Je suis Pierre Benoit, et j'espère vous partager qui je suis à travers les différentes sections de ce site.</p>
-                <p>De nouvelles sections devraient apparaitre dans les semaines qui suivent (hobbies/thèmes/...)</p>
+                <h2>Bienvenue</h2>
+                <h3>Je suis <span id="pierreBenoit"> Pierre Benoit,</span> et j'espère vous partager qui je suis à travers les différentes sections de ce site.</h3>
+                <p>Le site est actuellement en cours de création et n'a pas du tout sa forme finale.</p>
+                <p>Désolé pour le contre-temps</p>
+                <!-- <p>De nouvelles sections devraient apparaitre dans les semaines qui suivent (hobbies/thèmes/...)</p> -->
                 <!-- <p>Si vous ne l'avez pas encore fait, je vous invite à faire un petit tour dans les thèmes proposés dans la barre de navigation.</p> -->
-                <p>Pour me contacter? Allez dans la section contact ou cliquez <a href="">ici</a>.</p>
+                <!-- <p>Pour me contacter? Allez dans la section contact ou cliquez <a href="">ici</a>.</p> -->
             </div>
+
             
-
-            <div>
+            <div class="card">
                 <img id="welcomePhoto" src="./images/portraitRond400BP.png" alt="Pierre Benoit">
+                
+                
+                <ul>
+                    <li><a href="tel:+32472791407"> +32 472 79 14 07</a></li>
+                    <li><a href="mailto:pierre.benoit93@gmail.com">pierre.benoit93@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/benoit-pierre-dev-net/">linkedin</a></li>
+                    <li><a href="https://github.com/PBenoit93">github</a></li>
+                </ul>
             </div>
-
+                
         </section>
 
 <!----- section softSkills ----->
-        <section id="sectionSoftSkills">
-
+        <section id="softSkillsSection">
+        
             <h2>Soft Skills</h2>
-            
-            <dl>
-
-                <div>
-                    <dt>Facilité de communication</dt>                  
-                    <dd> 
-                        Au cours de mes différentes expériences, j'ai souvent été amené à occuper un post de délégué ou de référent. J'y étais souvent apprécié pour ma franchise et le respect, ce qui inspirait une relation de confiance.
-                    </dd>
-                </div>
-
-
-                <div>
-                    <dt>Détermination</dt>
-                    <dd> 
-                        Quand je fais un choix et détermine un objectif clair, s'il y a des diffultés, je persévère. Je suis exigeant envers moi-même et j'aime relever les défis. 
-                    </dd>
-                </div>
-
-                
-                <div>              
-                    <dt>Curiosité</dt>
-                    <dd> 
-                        Tout petit, depuis un tabouret près du comptoir du magasin familial, je m'installais et discutais avec de nombreux clients. Je leur posais de nombreuses questions sur des tas de sujets. Mes parents cultiveront cette curiosité en m'apprenant à lire et m'achetant mes premiers magazines comme "sciences et vie junior" où en me laissant feuilleter "Ciel et espace". Encore aujourd'hui je prends régulièrement un numéro où me rends sur d'autres médias pour en apprendre davantage sur des suets comme l'astronomie, l'astrophysique, l'Histoire et d'autres sciences.
-                    </dd>                   
-                </div>   
- 
-
-                <div>
-                    <dt>Créativité</dt>
-                    <dd>
-                        D'abord exercée pour une de mes passions, la peinture de figurines, elle m'a également permis de trouver des solutions parfois inattendues mais fonctionnelles à des problèmes, rencontrés lors de mon expérience chez Tilman ou encore pour répondre à certains exercices lors de mes formations en programmation.
-                    </dd>
-                </div>
-
-
-                <div>
-                    <dt>Esprit d'analyse et de synthèse</dt>
-                    <dd>
-                        Mon bagage scientifique et historique ainsi que mon passage chez Tilman m'ont appris à analyser les problématiques, à émettre des hypothèses, à les vérifier et à rendre des rapports sur les avancées de projets.
-                    </dd>
-                </div>
-    
+            <div>
+                <h3>Facilité de communication</h3>
+                <p>
+                    Au cours de mes différentes expériences, j'ai souvent été amené à occuper un post de délégué ou de référent.
+                    J'y étais souvent apprécié pour ma franchise et le respect, ce qui inspirait une relation de confiance.
+                </p>
+            </div>
+        
+        
+            <div>
+                <h3>Détermination</h3>
+                <p>
+                    Quand je fais un choix et détermine un objectif clair, s'il y a des diffultés, je persévère. Je suis
+                    exigeant envers moi-même et j'aime relever les défis.
+                </p>
+            </div>
+        
+        
+            <div>
+                <h3>Curiosité</h3>
+                <p>
+                    Tout petit, depuis un tabouret près du comptoir du magasin familial, je m'installais et discutais avec de
+                    nombreux clients. Je leur posais de nombreuses questions sur des tas de sujets. Mes parents cultiveront
+                    cette curiosité en m'apprenant à lire et m'achetant mes premiers magazines comme "sciences et vie junior" où
+                    en me laissant feuilleter "Ciel et espace". Encore aujourd'hui je prends régulièrement un numéro où me rends
+                    sur d'autres médias pour en apprendre davantage sur des suets comme l'astronomie, l'astrophysique,
+                    l'Histoire et d'autres sciences.
+                </p>
+            </div>
+        
+        
+            <div>
+                <h3>Créativité</h3>
+                <p>
+                    D'abord exercée pour une de mes passions, la peinture de figurines, elle m'a également permis de trouver des
+                    solutions parfois inattendues mais fonctionnelles à des problèmes, rencontrés lors de mon expérience chez
+                    Tilman ou encore pour répondre à certains exercices lors de mes formations en programmation.
+                </p>
+            </div>
+        
+        
+            <div>
+                <h3>Esprit d'analyse et de synthèse</h3>
+                <p>
+                    Mon bagage scientifique et historique ainsi que mon passage chez Tilman m'ont appris à analyser les
+                    problématiques, à émettre des hypothèses, à les vérifier et à rendre des rapports sur les avancées de
+                    projets.
+                </p>
+            </div>
+        
             </dl>
-
+        
         </section>
 
 <!----- section parcours ----->
-        <section id="sectionParcours">
+        <section id="careerSection">
 
             <h2>Parcours et Formations</h2>
-            
-            <dl id="chapitres">
 
-                <div>
-                    <dt>Mes débuts</dt>                  
-                    <dd>
-                        <p>
-                            Commençons le parcours par mes études secondaires. Elles se sont déroulés en 6 ans. J'y ai débuté par les cours en "immersion anglais" et l'option "latin" qui me suivra jusqu'à l'optention du CESS. M'orientant d'abord davantage vers les sciences avec l'option "sciences fortes", je terminerais par une orientation historique avec les options "latin", "Histoire" et "géographie fortes".
-                        </p>
-                        <p>
-                            Lors de cette période j'ai également plusieurs fois l'occasion de faire des jobs d'étudiants tels que plongeur et serveur dans des brasseries/bars. J'ai également fait du conseil client, du réassort et du rangement chez Luxus.
-                        </p>
-                        <p>
-                            Je serai également très actif dans mes clubs d'escalade. Je m'y suis très vite fait remarquer pour ma serviabilité ett mon sens des responsabilités. Je m'occupais du rangement du matériel, j'aidais les plus jeunes et/ou moins expériementés. Avec les années, j'aidais également à l'installation d'activités (tiroliennes, via cordata,..) et à guider les groupes le plus souvent d'enfants mais aussi d'adultes lors de team-building par exemple. 
-                        </p>
-                    </dd>
-                </div>
+            <div>
+                <h3>Mes débuts</h3>
+                <p>
+                    Commençons le parcours par mes études secondaires. Elles se sont déroulés en 6 ans. J'y ai débuté par les cours en
+                    "immersion anglais" et l'option "latin" qui me suivra jusqu'à l'optention du CESS. M'orientant d'abord davantage
+                    vers les sciences avec l'option "sciences fortes", je terminerais par une orientation historique avec les options
+                    "latin", "Histoire" et "géographie fortes".
+                </p>
+                <p>
+                    Lors de cette période j'ai également plusieurs fois l'occasion de faire des jobs d'étudiants tels que plongeur et
+                    serveur dans des brasseries/bars. J'ai également fait du conseil client, du réassort et du rangement chez Luxus.
+                </p>
+                <p>
+                    Je serai également très actif dans mes clubs d'escalade. Je m'y suis très vite fait remarquer pour ma serviabilité
+                    ett mon sens des responsabilités. Je m'occupais du rangement du matériel, j'aidais les plus jeunes et/ou moins
+                    expériementés. Avec les années, j'aidais également à l'installation d'activités (tiroliennes, via cordata,..) et à
+                    guider les groupes le plus souvent d'enfants mais aussi d'adultes lors de team-building par exemple.
+                </p>
+
+            </div>
 
 
-                <div>
-                    <dt>Études supérieures et Emploi</dt>
-                    <dd>
-                        <p>
-                            Mes études secondaires ne me permettant pas de définir clairement mes objectifs, j'ai d'abord testé une année pour un master ingénierie industrielle. Bien qu'ayant des facilités pour les cours de "mathématiques", "physique" et "chimie", je n'y trouverais pas ma voie.
-                        </p>
-                        <p>
-                            Passionné par la nature, je suis allé à La Reid dans le but d'y suivre un bachelier en agronomie. Mes points forts précédemment cités et l'attrait pour des cours comme celui de "sylviculture et gestion forestière" ne suffiront cependant pas à me faire continuer dans cette voie. Loin d'être une perte de temps, j'y ferais la rencontre d'un ami, Josué Ulliana, qui sera un personnage important pour la suite de cette histoire.
-                        </p>
-                        <p>
-                            Perplexe devant ce que je considèrerais longtemps comme des échecs, je ne suis pas resté inactif longtemps. Sans diplôme, j'ai décidé d'aller chercher un emploi et je l'ai trouvé chez Tilman comme opérateur de production. J'y ai appris les compétences techniques liés à ma fonction (connaissances des mesures GMP) mais aussi des compétence de gestion et formation de petites équipes lors de ma participation à des projets de recherches et développement. Je serai également amené à chercher des procédures, et à rédiger des rapports pour les différents services. J'y appris également une culture d'entreprise qu'à l'époque je nommais "familiale" et qui se rèvelera être proche de ce que j'appelerai plus tard la méthode "Agile". J'y resterai 8ans.
-                        </p>
-                    </dd>
-                </div>
+            <div>
+                <h3>Études supérieures et Emploi</h3>
+                <p>
+                    Mes études secondaires ne me permettant pas de définir clairement mes objectifs, j'ai d'abord testé une année
+                    pour
+                    un master ingénierie industrielle. Bien qu'ayant des facilités pour les cours de "mathématiques", "physique" et
+                    "chimie", je n'y trouverais pas ma voie.
+                </p>
+                <p>
+                    Passionné par la nature, je suis allé à La Reid dans le but d'y suivre un bachelier en agronomie. Mes points
+                    forts
+                    précédemment cités et l'attrait pour des cours comme celui de "sylviculture et gestion forestière" ne suffiront
+                    cependant pas à me faire continuer dans cette voie. Loin d'être une perte de temps, j'y ferais la rencontre d'un
+                    ami, Josué Ulliana, qui sera un personnage important pour la suite de cette histoire.
+                </p>
+                <p>
+                    Perplexe devant ce que je considèrerais longtemps comme des échecs, je ne suis pas resté inactif longtemps. Sans
+                    diplôme, j'ai décidé d'aller chercher un emploi et je l'ai trouvé chez Tilman comme opérateur de production. J'y
+                    ai
+                    appris les compétences techniques liés à ma fonction (connaissances des mesures GMP) mais aussi des compétence
+                    de
+                    gestion et formation de petites équipes lors de ma participation à des projets de recherches et développement.
+                    Je
+                    serai également amené à chercher des procédures, et à rédiger des rapports pour les différents services. J'y
+                    appris
+                    également une culture d'entreprise qu'à l'époque je nommais "familiale" et qui se rèvelera être proche de ce que
+                    j'appelerai plus tard la méthode "Agile". J'y resterai 8ans.
+                </p>
+            </div>
 
                 
-                <div>              
-                    <dt>Reconversion</dt>
-                    <dd> 
-                        <p>
-                            Après ces 8 ans de service chez Tilman, je fus amené à devoir trouver un nouvel emploi. Un autre choix s'offrait cependant à moi et ce fut Josué qui m'apprendra l'exitance de Proforma, centre proposant une formation d'orientation et d'initiation à la programmation.
-                        </p>
-                        <p>
-                            Grâce à des professeurs géniaux et passionnés, ce nouvel horizon qu'est la programmation s'ouvrait devant moi. J'y reçus donc les bases d'algorithmie, de Java, PHP et SQL. J'y ferai également mes débuts en HTML et CSS. Les cours de communication me feront redécouvrir et définir la méthode "Agile". C'est également chez Proforma que je me relèverai avec une détermination renouvelée et un objectif défini: vivre de cette nouvelle passion qu'est la programmation.
-                        </p>
-                    </dd>                   
-                </div>   
- 
-                <div>              
-                    <dt>Actuellement</dt>
-                    <dd> 
-                        <p>
-                            Pour continuer sur la lancée de chez Proforma et après avoir hésité avec une formation de "Business Analyst", je suis actuellement en formation "Développeur.Net" proposée par Technifutur. Je l'ai débutée en mai 2023 et elle se terminera en février 2024. J'y découvre et me familiarise avec le langage C# et l'environnement ".Net".
-                        </p>
-                        <p>
-                            Avec l'aide de professeurs et de collègues de classe partageant leurs avis et connaissances, chaque jour j'en apprends davantage techniquement mais aussi humainement. C'est un réel plaisir de relever de nouveaux défis chaque jour dans un domaine où je m'épanouis.
-                        </p>
-                    </dd>                   
-                </div>       
-            </dl>
+            <div>
+                <h3>Reconversion</h3>
+                <p>
+                    Après ces 8 ans de service chez Tilman, je fus amené à devoir trouver un nouvel emploi. Un autre choix s'offrait
+                    cependant à moi et ce fut Josué qui m'apprendra l'exitance de Proforma, centre proposant une formation
+                    d'orientation et d'initiation à la programmation.
+                </p>
+                <p>
+                    Grâce à des professeurs géniaux et passionnés, ce nouvel horizon qu'est la programmation s'ouvrait devant moi.
+                    J'y reçus donc les bases d'algorithmie, de Java, PHP et SQL. J'y ferai également mes débuts en HTML et CSS. Les
+                    cours de communication me feront redécouvrir et définir la méthode "Agile". C'est également chez Proforma que je
+                    me relèverai avec une détermination renouvelée et un objectif défini: vivre de cette nouvelle passion qu'est la
+                    programmation.
+                </p>
+            
+            </div>
+            
+            <div>
+                <h3>Actuellement</h3>
+                <p>
+                    Pour continuer sur la lancée de chez Proforma et après avoir hésité avec une formation de "Business Analyst", je
+                    suis actuellement en formation "Développeur.Net" proposée par Technifutur. Je l'ai débutée en mai 2023 et elle
+                    se terminera en février 2024. J'y découvre et me familiarise avec le langage C# et l'environnement ".Net".
+                </p>
+                <p>
+                    Avec l'aide de professeurs et de collègues de classe partageant leurs avis et connaissances, chaque jour j'en
+                    apprends davantage techniquement mais aussi humainement. C'est un réel plaisir de relever de nouveaux défis
+                    chaque jour dans un domaine où je m'épanouis.
+                </p>
+            </div>
 
         </section>        
 
 <!----- section compétences ----->
-        <section id="sectionCompétences">
+        <section id="hardSkillsSection">
             <h2>Compétences</h2>
             
-            <dl>
-
                 <div>
-                    <dt>Langues :</dt>                  
-                    <dd> 
-                        <ul>
-                            <li>français: langue maternelle</li>
-                            <li>anglais: niveau correct (immersion 4ans) </li>
-                        </ul>
-                    </dd>
+                    <h3>Langues :</h3>                  
+                    <ul>
+                        <li>français: langue maternelle</li>
+                        <li>anglais: niveau correct (immersion 4ans) </li>
+                    </ul>
                 </div>
 
 
                 <div>
-                    <dt>Programmation</dt>
-                    <dd> 
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>C#</li>
-                            <li>SQL</li>
-                            <li>ADO</li>
-                            <li>ASP.Net</li>
-                            <li>LinQ</li>
-                            <li>Git</li>
-                            <li>Php</li>
-                            <li>Java</li>
-                            <li>TDD (Test Driven Development)</li>
-                        </ul>
-                    </dd>
+                    <h3>Programmation</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>ADO</li>
+                        <li>ASP.Net</li>
+                        <li>LinQ</li>
+                        <li>Git</li>
+                        <li>Php</li>
+                        <li>Java</li>
+                        <li>TDD (Test Driven Development)</li>       
+                    </ul>
                 </div>
 
                 <div>
-                    <dt>Divers :</dt>                  
-                    <dd> 
-                        <ul>
-                            <li>méthode "Agile"</li>
-                            <li>permis B</li>
-                            <li>BEPS: brevet de secourisme</li>
-                            <li>mesures GMP: bonnes pratiques de production pharmaceutiques</li>
-                        </ul>
-                    </dd>
+                    <h3>Divers :</h3>                  
+                    <ul>
+                        <li>méthode "Agile"</li>
+                        <li>permis B</li>
+                        <li>BEPS: brevet de secourisme</li>
+                        <li>mesures GMP: bonnes pratiques de production pharmaceutiques</li>
+                    </ul>
+
                 </div>
 
-            </dl>
         </section>
 
 <!----- section contact ----->
-        <section id="sectionContact">
+        <section id="ContactSection">
             <h2>Contact</h2>
             
-            <dl>
-
-                <div>
-                    <dt>Par téléphone :</dt>                  
-                    <dd> 
-                        <a href="tel:+32472791407"> +32 472 79 14 07</a>
-                    </dd>
-                </div>
+            <div>
+                <h3>Par téléphone :</h3>                  
+                 <a href="tel:+32472791407"> +32 472 79 14 07</a>
+            </div>
                 
 
-                <div>
-                    <dt>Par Email :</dt>                  
-                    <dd> 
-                        <a href="mailto:pierre.benoit93@gmail.com">pierre.benoit93@gmail.com</a>
-                    </dd>
-                </div>
+            <div>
+                <h3>Par Email :</h3>                  
+                <a href="mailto:pierre.benoit93@gmail.com">pierre.benoit93@gmail.com</a>
+                  
+            </div>
 
-                <div>
-                    <dt>Sur LinkedIn :</dt>                  
-                    <dd> 
-                        <a href="https://www.linkedin.com/in/benoit-pierre-dev-net/"></a>
-                    </dd>
-                </div>
+            <div>
+                <h3>Sur LinkedIn :</h3>
+                <a href="https://www.linkedin.com/in/benoit-pierre-dev-net/"></a>
+            </div>
 
-                <div>
-                    <dt>Lien GitHub :</dt>                  
-                    <dd> 
-                        <a href="https://github.com/PBenoit93"></a>
-                    </dd>
-                </div>
-
-            </dl>
+            <div>
+                <h3>Lien GitHub :</h3>
+                <a href="https://github.com/PBenoit93"></a>
+            </div>     
         </section>
-
-
 
 
     </main>

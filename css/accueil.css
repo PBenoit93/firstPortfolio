@@ -1,15 +1,24 @@
 /* ---------------preset--------------- */
 :root {
     --col1Bg: hsl(198, 38%, 9%);
+    --colTitleFont: rgb(255, 255, 255);
     --col1Font: rgb(197, 215, 224);
-    --col2Font: rgb(69, 178, 206);
-    --col2hover:#e7f3f5;
+    --col1LinkFont: rgb(69, 178, 206);
+    --col1HoverFont:#e7f3f5;
     
     --darkBG: linear-gradient(
         rgb(7, 2, 22),
         rgb(13, 4, 41),
         rgb(7, 13, 66),
         rgb(5, 33, 37));
+
+    --colBarObjet1:linear-gradient(90deg,
+        rgb(12, 156, 223) 20%,
+        rgb(24, 27, 211) 40%,
+        rgba(2, 1, 1, 0.788)50%,
+        rgb(214, 18, 18) 60%,
+        rgb(240, 119, 6) 80%
+        );
 }
 
 
@@ -24,57 +33,93 @@
 body{
     font-size: 1.2rem;
     min-height: 100vh;
-
     background-color: var(--col1Bg);
+    background-image: var(--darkBG);
     color:var(--col1Font);
 }
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
 
 a{
-    color: var(--col2Font);
+    color: var(--col1LinkFont);
 }
+
 a:hover{
-    color: var(--col2hover);
+    color: var(--col1HoverFont);
 }
 
 img{
-    max-width: 100%;
+    max-width: 80%;
     display: block;
 }
 
 /*---------------------------------*/
-
-body{
-    background-image: var(--darkBG);
-}
 header{
-    min-width: 100%;
-    min-height: 20vh;
-
-}
-header div{
-    display: block;
+    margin-top: 2rem;
     width: 100%;
-    padding: 1rem;
-    top: 5vh;
-    left: 5%;
-    margin:auto
+    text-align: center;
+    
 }
-header nav{
-    width: 100%;
-    align-items: center;
+h1{
+    color:var(--colTitleFont);
+    padding: 1rem 0 ;
 }
-header nav ul{
+.navBar ul{
     display: flex;
     justify-content: space-around;
     padding: 1rem;
     flex-direction: raw;
-    max-width: 100%;
-    
+    max-width: 100%;   
 }
-header nav ul li{
-list-style-type: none;
+.navBar ul li{
+    list-style-type: none;
+}
+.navbBarButton{
+    color: var(--col1Font);
+    font-size: 1.3rem;
+    padding: 0.2rem 0.3rem;
+    background:none;
+    /* background-image: var(--colBarObjet1); */
+ 
+    border-style: none;
+
+}
+
+.bottomBarObject{
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--col1Font);
+    background-image: var(--colBarObjet1);
 }
 /*----------------*/
+section{
+    display: block;
+}
 
-   
-    
+h2{
+    color: var(--colTitleFont);
+    padding: 1rem 0 ;
+}
+
+h3{
+    padding: 0.7rem 0;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card ul{
+    list-style: none;
+}
+.card ul li{
+    padding: 1rem;
+}
+
