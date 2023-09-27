@@ -3,6 +3,7 @@
     --col1Bg: hsl(198, 38%, 9%);
     --colTitleFont: rgb(255, 255, 255);
     --col1Font: rgb(197, 215, 224);
+    --col1redAccent:rgb(241, 52, 5);
     --col1LinkFont: rgb(69, 178, 206);
     --col1HoverFont:#e7f3f5;
     
@@ -16,6 +17,13 @@
         rgb(12, 156, 223) 20%,
         rgb(24, 27, 211) 40%,
         rgba(2, 1, 1, 0.788)50%,
+        rgb(214, 18, 18) 60%,
+        rgb(240, 119, 6) 80%
+        );
+    --Objet2:linear-gradient(90deg,
+        rgb(12, 156, 223) 20%,
+        rgb(24, 27, 211) 40%,
+        rgba(255, 255, 255, 0.788)50%,
         rgb(214, 18, 18) 60%,
         rgb(240, 119, 6) 80%
         );
@@ -39,6 +47,7 @@ body{
 }
 main{
     width: 80%;
+    height: 80%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -64,6 +73,10 @@ h1{
     color:var(--colTitleFont);
     padding: 1rem 0 ;
 }
+h1 span{
+    color: var(--col1redAccent);
+    font-size: 1.9rem;
+}
 .navBar ul{
     display: flex;
     justify-content: space-around;
@@ -81,15 +94,31 @@ h1{
     background:none;
     /* background-image: var(--colBarObjet1); */
     
-    border-style: none;
+    border-style: none;   
+}
+
+.navbBarButton:hover{
     
 }
 
+
 .bottomBarObject{
+    position: relative;
     width: 100%;
     height: 0.1rem;
     background-color: var(--col1Font);
     background-image: var(--colBarObjet1);
+}
+.bottomBarObject::before{
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    background-image: inherit;
+    filter: blur(5px);
+    width: 100dvw;
+    height: 0.5rem;
+    left: 0;
+    
 }
 
 /*----------------*/
