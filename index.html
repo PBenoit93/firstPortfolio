@@ -22,11 +22,11 @@
     
                 <nav class="navBar">
                     <ul>
-                        <li><button class="navbBarButton">Accueil</button></li>
-                        <li><button class="navbBarButton">Soft Skills</button></li>
-                        <li><button class="navbBarButton">Parcours</button></li>
-                        <li><button class="navbBarButton">Compétences</button></li>
-                        <li><button class="navbBarButton">Contact</button></li>
+                        <li><button class="navbBarButton" value="welcomeSection" onclick=nav(value)>Accueil</button></li>
+                        <li><button class="navbBarButton" value="softSkillsSection" onclick=nav(value)>Soft Skills</button></li>
+                        <li><button class="navbBarButton" value="careerSection" onclick=nav(value)>Parcours</button></li>
+                        <li><button class="navbBarButton" value="hardSkillsSection" onclick=nav(value)>Compétences</button></li>
+                        <li><button class="navbBarButton" value="contactSection" onclick=nav(value)>Contact</button></li>
                         <!--<li><button>Hobbies</button></li>-->
                         <!--<li><button>thèmes</button></li>-->                              
                     </ul>                                
@@ -48,16 +48,16 @@
     -->         
     
             </header>
+    
     <main>
-
 <!----- section accueil ----->
-        <section id="welcomeSection">
+        <section id="welcomeSection" class="page display-flex">
         
             <div>
                 <h2>Bienvenue</h2>
                 <h3>Je suis <span id="pierreBenoit"> Pierre Benoit,</span> et j'espère vous partager qui je suis à travers les différentes sections de ce site.</h3>
                 <p>Le site est actuellement en cours de création et n'a pas du tout sa forme finale.</p>
-                <p>Désolé pour le contre-temps</p>
+                <p>Désolé pour le contre-temps.</p>
                 <!-- <p>De nouvelles sections devraient apparaitre dans les semaines qui suivent (hobbies/thèmes/...)</p> -->
                 <!-- <p>Si vous ne l'avez pas encore fait, je vous invite à faire un petit tour dans les thèmes proposés dans la barre de navigation.</p> -->
                 <!-- <p>Pour me contacter? Allez dans la section contact ou cliquez <a href="">ici</a>.</p> -->
@@ -79,7 +79,7 @@
         </section>
 
 <!----- section softSkills ----->
-        <section id="softSkillsSection">
+        <section id="softSkillsSection" class="page display-none">
         
             <h2>Soft Skills</h2>
             <div>
@@ -137,7 +137,7 @@
         </section>
 
 <!----- section parcours ----->
-        <section id="careerSection">
+        <section id="careerSection" class="page display-none">
 
             <h2>Parcours et Formations</h2>
 
@@ -228,7 +228,7 @@
         </section>        
 
 <!----- section compétences ----->
-        <section id="hardSkillsSection">
+        <section id="hardSkillsSection" class="page display-none">
             <h2>Compétences</h2>
             
                 <div>
@@ -272,7 +272,7 @@
         </section>
 
 <!----- section contact ----->
-        <section id="ContactSection">
+        <section id="contactSection" class="page display-none">
             <h2>Contact</h2>
             
             <div>
