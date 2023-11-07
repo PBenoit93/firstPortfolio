@@ -20,51 +20,73 @@
 
 <body>
 
-    <!----- bandeau supérieur ----->
-            <header>
-    
-                <div class="title">
-                    <h1>Développeur .Net <span id="netAccent">junior</span> </h1>
-                </div>
-    
-    
-                <nav class="navBar">
-                    <ul>
-                        <li><button class="navbBarButton" value="welcomeSection" onclick=nav(value)>Accueil</button></li>
-                        <li><button class="navbBarButton" value="softSkillsSection" onclick=nav(value)>Soft Skills</button></li>
-                        <li><button class="navbBarButton" value="careerSection" onclick=nav(value)>Parcours</button></li>
-                        <li><button class="navbBarButton" value="hardSkillsSection" onclick=nav(value)>Compétences</button></li>
-                        <li><button class="navbBarButton" value="contactSection" onclick=nav(value)>Contact</button></li>
-                        <!--<li><button>Hobbies</button></li>-->
-                        <!--<li><button>thèmes</button></li>-->                              
-                    </ul>                                
-                </nav>
-    
-                <div class="bottomBarObject"></div>
-     <!-----           
-                <nav class="hamburgerMenu">
-                    <ul>
-                        <li><button>Accueil</button></li>
-                        <li><button>Soft Skills</button></li>
-                        <li><button>Parcours</button></li>
-                        <li><button>Compétences</button></li>
-                        <li><button>Contact</button></li>
-                        <li><button>Hobbies</button></li>
-                        li><button>thèmes</button></li>                              
-                    </ul>                                
-                </nav> 
-    -->         
-    
-            </header>
-    
-    <main>
-<!----- section accueil ----->
-        <section id="welcomeSection" class="page display-flex">
+    <header id="header" class="flex">
         
-            <div>
-                <h2>Bienvenue</h2>
-                <h3>Je suis <span id="pierreBenoit"> Pierre Benoit,</span> et j'espère vous partager qui je suis à travers les différentes sections de ce site.</h3>
-                <p>Le site est actuellement en cours de création et n'a pas du tout sa forme finale.</p>
+        <svg class="logo" width="100" height="100" viewBox="0 0 95 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="logoMountainAndStarOnly">
+                <path id="MoutainRight" d="M48.8798 76L70.587 43.7894L92.2941 76H48.8798Z" fill="var(--logoMountainRight)" stroke="var(--logoStroke)"
+                    stroke-width="2" />
+                <g id="SubtractLeft">
+                    <mask id="path-2-inside-1_4_136" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M55.6924 67.6404L31 31L0 77H62L60.6522 75H50.7703L55.6924 67.6404Z" />
+                    </mask>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M55.6924 67.6404L31 31L0 77H62L60.6522 75H50.7703L55.6924 67.6404Z" fill="var(--logoMountainLeft)" />
+                    <path
+                        d="M31 31L32.6585 29.8823L31 27.4212L29.3415 29.8823L31 31ZM55.6924 67.6404L57.3549 68.7523L58.1013 67.6362L57.351 66.5227L55.6924 67.6404ZM0 77L-1.65853 75.8823L-3.7596 79H0V77ZM62 77V79H65.7596L63.6585 75.8823L62 77ZM60.6522 75L62.3107 73.8823L61.7161 73H60.6522V75ZM50.7703 75L49.1078 73.8881L47.0266 77H50.7703V75ZM29.3415 32.1177L54.0339 68.7581L57.351 66.5227L32.6585 29.8823L29.3415 32.1177ZM1.65853 78.1177L32.6585 32.1177L29.3415 29.8823L-1.65853 75.8823L1.65853 78.1177ZM62 75H0V79H62V75ZM58.9936 76.1177L60.3415 78.1177L63.6585 75.8823L62.3107 73.8823L58.9936 76.1177ZM60.6522 73H50.7703V77H60.6522V73ZM52.4328 76.1119L57.3549 68.7523L54.03 66.5285L49.1078 73.8881L52.4328 76.1119Z"
+                        fill="var(--logoStroke)" mask="url(#path-2-inside-1_4_136)" />
+                </g>
+                <g id="SubtractCenter">
+                    <mask id="path-4-inside-2_4_136" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M86.5217 75L87.8696 77H47.4348H7L8.34783 75H50.7703H58.5H86.5217ZM68.578 48.3738L47.4348 17L33.3294 37.9306L54.6059 69.265L68.578 48.3738Z" />
+                    </mask>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M86.5217 75L87.8696 77H47.4348H7L8.34783 75H50.7703H58.5H86.5217ZM68.578 48.3738L47.4348 17L33.3294 37.9306L54.6059 69.265L68.578 48.3738Z"
+                        fill="var(--logoMountainCenter)" />
+                    <path
+                        d="M87.8696 77V79H91.6292L89.5281 75.8823L87.8696 77ZM86.5217 75L88.1803 73.8823L87.5857 73H86.5217V75ZM7 77L5.34147 75.8823L3.2404 79H7V77ZM8.34783 75V73H7.28388L6.68929 73.8823L8.34783 75ZM68.578 48.3738L70.2405 49.4857L70.9869 48.3696L70.2365 47.2561L68.578 48.3738ZM47.4348 17L49.0933 15.8823L47.4348 13.4212L45.7763 15.8823L47.4348 17ZM33.3294 37.9306L31.6709 36.8129L30.9148 37.9348L31.6748 39.0541L33.3294 37.9306ZM54.6059 69.265L52.9513 70.3885L54.6184 72.8438L56.2683 70.3769L54.6059 69.265ZM89.5281 75.8823L88.1803 73.8823L84.8632 76.1177L86.211 78.1177L89.5281 75.8823ZM47.4348 79H87.8696V75H47.4348V79ZM7 79H47.4348V75H7V79ZM6.68929 73.8823L5.34147 75.8823L8.65853 78.1177L10.0064 76.1177L6.68929 73.8823ZM50.7703 73H8.34783V77H50.7703V73ZM58.5 73H50.7703V77H58.5V73ZM86.5217 73H58.5V77H86.5217V73ZM70.2365 47.2561L49.0933 15.8823L45.7763 18.1177L66.9195 49.4915L70.2365 47.2561ZM45.7763 15.8823L31.6709 36.8129L34.9879 39.0483L49.0933 18.1177L45.7763 15.8823ZM31.6748 39.0541L52.9513 70.3885L56.2605 68.1415L34.984 36.8071L31.6748 39.0541ZM56.2683 70.3769L70.2405 49.4857L66.9156 47.262L52.9434 68.1532L56.2683 70.3769Z"
+                        fill="var(--logoStroke)" mask="url(#path-4-inside-2_4_136)" />
+                </g>
+                <g id="Stars">
+                    <path id="StarCenter"
+                        d="M47 1.61803L48.0961 4.99139L48.2083 5.33688H48.5716H52.1186L49.249 7.42173L48.9551 7.63526L49.0674 7.98075L50.1634 11.3541L47.2939 9.26925L47 9.05573L46.7061 9.26925L43.8366 11.3541L44.9326 7.98075L45.0449 7.63526L44.751 7.42173L41.8814 5.33688H45.4284H45.7917L45.9039 4.99139L47 1.61803Z"
+                        fill="var(--logoStarCenterColor)" stroke="var(--logoStroke)" />
+                    <path id="StarLeft"
+                        d="M31 11.618L32.0961 14.9914L32.2083 15.3369H32.5716H36.1186L33.249 17.4217L32.9551 17.6353L33.0674 17.9807L34.1634 21.3541L31.2939 19.2693L31 19.0557L30.7061 19.2693L27.8366 21.3541L28.9326 17.9807L29.0449 17.6353L28.751 17.4217L25.8814 15.3369H29.4284H29.7917L29.9039 14.9914L31 11.618Z"
+                        fill="var(--logoStarLeftColor)" stroke="var(--logoStroke)" />
+                    <path id="StarRight"
+                        d="M71 18.618L72.0961 21.9914L72.2083 22.3369H72.5716H76.1186L73.249 24.4217L72.9551 24.6353L73.0674 24.9807L74.1634 28.3541L71.2939 26.2693L71 26.0557L70.7061 26.2693L67.8366 28.3541L68.9326 24.9807L69.0449 24.6353L68.751 24.4217L65.8814 22.3369H69.4284H69.7917L69.9039 21.9914L71 18.618Z"
+                        fill="var(--logoStarRightColor)" stroke="var(--logoStroke)" />
+                </g>
+            </g>
+        </svg>
+
+
+        <nav>
+            <ul id="navList" class="navList flex">
+                <li> <button class="navBarButtons" value="welcomeSection" onclick="nav(value)">Accueil</button> </li>
+                <li> <button class="navBarButtons" value="softSkillsSection" onclick="nav(value)">Soft Skills</button> </li>
+                <li> <button class="navBarButtons" value="careerSection" onclick="nav(value)">Parcours</button> </li>
+                <li> <button class="navBarButtons" value="hardSkillsSection" onclick="nav(value)">Compétences</button> </li>
+                <li> <button class="navBarButtons" value="contactSection" onclick="nav(value)">Contact</button> </li>
+                <!-- <li class="navbBarButton" value="hobbies">Hobbies</li> -->
+                <!-- <li class="navbBarButton" value="themes">Thèmes</li>   -->
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <div id="coloredBar"></div>
+    <!----- section accueil ----->
+    <section id="welcomeSection" class="page">
+        <h1>Developpeur .Net<span id="junior"><br>junior</span></h1>
+        
+        <div>
+            <h2>Bienvenue</h2>
+            <h3>Je suis <span id="pierreBenoit"> Pierre Benoit,</span> et j'espère vous partager qui je suis à travers les différentes sections de ce site.</h3>
+            <p>Le site est actuellement en cours de création et n'a pas du tout sa forme finale.</p>
                 <p>Désolé pour le contre-temps.</p>
                 <!-- <p>De nouvelles sections devraient apparaitre dans les semaines qui suivent (hobbies/thèmes/...)</p> -->
                 <!-- <p>Si vous ne l'avez pas encore fait, je vous invite à faire un petit tour dans les thèmes proposés dans la barre de navigation.</p> -->
@@ -72,8 +94,8 @@
             </div>
 
             
-            <div class="card">
-                <img id="welcomePhoto" src="./images/portraitRond400BP.png" alt="Pierre Benoit">
+            <div id="visitCard" class="flex">
+                <img id="welcomePhoto" src="./images/portraitRond400BP.png" alt="Photo Pierre Benoit">
                 
                 
                 <ul>
@@ -87,7 +109,7 @@
         </section>
 
 <!----- section softSkills ----->
-        <section id="softSkillsSection" class="page display-none">
+        <section id="softSkillsSection" class="page displayNone">
         
             <h2>Soft Skills</h2>
             <div>
@@ -145,7 +167,7 @@
         </section>
 
 <!----- section parcours ----->
-        <section id="careerSection" class="page display-none">
+        <section id="careerSection" class="page displayNone">
 
             <h2>Parcours et Formations</h2>
 
@@ -236,7 +258,7 @@
         </section>        
 
 <!----- section compétences ----->
-        <section id="hardSkillsSection" class="page display-none">
+        <section id="hardSkillsSection" class="page displayNone">
             <h2>Compétences</h2>
             
                 <div>
@@ -280,7 +302,7 @@
         </section>
 
 <!----- section contact ----->
-        <section id="contactSection" class="page display-none">
+        <section id="contactSection" class="page displayNone ">
             <h2>Contact</h2>
             
             <div>

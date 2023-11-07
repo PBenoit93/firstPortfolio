@@ -1,170 +1,254 @@
-/* ---------------preset--------------- */
 :root {
-    --col1Bg: hsl(198, 38%, 9%);
-    --colTitleFont: rgb(255, 255, 255);
-    --col1Font: rgb(197, 215, 224);
-    --col1redAccent:rgb(241, 52, 5);
-    --col1LinkFont: rgb(69, 178, 206);
-    --col1HoverFont:#e7f3f5;
-    
-    --darkBG: linear-gradient(
-        rgb(7, 2, 22),
-        rgb(13, 4, 41),
-        rgb(7, 13, 66),
-        rgb(5, 33, 37));
-
-    --colBarObjet1:linear-gradient(90deg,
-        rgb(12, 156, 223) 20%,
-        rgb(24, 27, 211) 40%,
-        rgba(2, 1, 1, 0.788)50%,
-        rgb(214, 18, 18) 60%,
-        rgb(240, 119, 6) 80%
-        );
-    --Objet2:linear-gradient(90deg,
-        rgb(12, 156, 223) 20%,
-        rgb(23, 27, 211)%,
-        rgba(255, 255, 255, 0.788)50%,
-        rgb(214, 18, 18) 60%,
-        rgb(240, 119, 6) 80%
-        );
+    --fontColor: rgb(224, 224, 224);
+    --fontColorLess: rgb(240, 16, 16);
+    --iconMenuSize: 2.5rem;
+    --iconColor1: rgb(190, 31, 20);
+    --iconColorGradient: linear-gradient(45deg,
+            rgb(168, 19, 8),
+            rgb(224, 114, 11));
+    --iconBackgroundColor1: rgb(20, 51, 190);
+    --iconBackgroundGradient: linear-gradient(-110deg,
+            rgb(36, 27, 158),
+            rgb(7, 14, 121),
+            rgb(11, 156, 224));
+    --coloredBar1: linear-gradient(90deg,
+            rgba(24, 27, 211, 0) 0%,
+            rgb(24, 27, 211) 10%,
+            rgb(24, 27, 211) 20%,
+            rgb(12, 156, 223) 40%,
+            rgb(230, 230, 230)50%,
+            rgb(240, 119, 6) 60%,
+            rgb(214, 18, 18) 80%,
+            rgb(214, 18, 18) 90%,
+            rgba(214, 18, 18, 0) 100%);
+    --logoStarCenterColor: rgb(255, 255, 255);
+    --logoStarLeftColor: rgb(214, 219, 231);
+    --logoStarRightColor: rgb(255, 255, 255);
+    --logoMountainLeft: rgb(214, 219, 231);
+    --logoMountainCenter: rgb(255, 255, 255);
+    --logoMountainRight: rgb(255, 255, 255);
+    --logoStroke:rgb(255, 255, 255);
+    /* these colors are modified in the css in logo's section */
 }
-
 
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    color:inherit;
+    font: inherit;
 }
 
-body{
-    font-size: 1.2rem;
-    min-height: 100vh;
-    background-color: var(--col1Bg);
-    background-image: var(--darkBG);
-    color:var(--col1Font);
-}
-main{
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    margin-top: 2rem;
-}
-
-
-a{
-    color: var(--col1LinkFont);
-}
-
-a:hover{
-    color: var(--col1HoverFont);
-}
-
-
-/*---------------------------------*/
-header{
-    margin-top: 2rem;
-    width: 100%;
-    text-align: center;
-    
-}
-h1{
-    color:var(--colTitleFont);
-    padding: 1rem 0 ;
-}
-h1 span{
-    color: var(--col1redAccent);
-    font-size: 1.9rem;
-}
-.navBar ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    flex-direction: raw;
-    max-width: 100%;   
-}
-.navBar ul li{
-    list-style-type: none;
-}
-.navbBarButton{
-    color: var(--col1Font);
-    font-size: 1.3rem;
-    padding: 0.2rem 0.3rem;
-    background:none;
-    /* background-image: var(--colBarObjet1); */
-    
-    border-style: none;   
-}
-
-.navbBarButton:hover{
-    
-}
-
-
-.bottomBarObject{
-    position: relative;
-    width: 100%;
-    height: 0.1rem;
-    background-color: var(--col1Font);
-    background-image: var(--colBarObjet1);
-}
-.bottomBarObject::before{
-    content: '';
-    position: absolute;
-    background-color: inherit;
-    background-image: inherit;
-    filter: blur(5px);
-    width: 100dvw;
-    height: 0.5rem;
-    left: 0;
-    
-}
-
-/*----------------*/
-.display-none{
-    display: none;
-}
-
-.display-flex{
-    display: flex;
-}
-
-section{
-    /* width: 80%;
-    margin: auto; */
-    flex-direction: column;
-    padding: 1rem;
-}
-
-
-
-h2{
-    color: var(--colTitleFont);
-    padding: 1rem 0 ;
-}
-
-h3{
-    padding: 1rem 0;
-}
-
-
-.card{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding: 5rem 1rem;
-}
-
-#welcomePhoto{
-    max-width: 80%;
+svg,img{
     display: block;
 }
 
-.card ul{
-    list-style: none;
+body {
+
+    background-color: rgb(0, 0, 0);
+    color: var(--fontColor);
 }
-.card ul li{
-    padding: 0.5rem;
+h1{
+    font-size: 2rem;
+    margin-block: 1em;
+}
+h2{
+    font-size: 1.5rem;
+    margin-block: 0.7em;
+}
+h3{
+    font-size: 1.3rem;
+    margin-block: 0.7em;
+    line-height: 1.5em;
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}
+button{
+    background: none;
+    border: none;
+}
+button:hover{
+    color: white;
+    scale: 1.07;
+}
+ul{
+    list-style: none;
+    line-height: 1.3rem;
+}
+
+/* ----------- Tools ----------- */
+
+.flex{
+    flex-wrap: wrap;
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+.displayNone {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+
+/* #menu:hover {
+    scale: 1.07;
+} */
+
+
+.menuBars {
+    background-color: var(--iconColor1);
+    background-image: var(--iconColorGradient);
+    width: 80%;
+    height: 10%;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: transform 0.5s, width 0.5s;
+}
+
+#line1 {
+    transform: translate(-50%, -200%);
+}
+
+#line3 {
+    transform: translate(-50%, 100%);
+}
+
+.openMenu #line1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openMenu #line3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openMenu #line2 {
+    width: 0;
+}
+
+/* ----------- -----------  Header ----------- ----------- */
+
+header{
+    padding-inline: clamp(1rem, 8vw,6rem);
+    padding-block: 1em;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/* ----------- logo ----------- */
+/* to change the colors of the different objects, they are in the :root{} */
+.logo{
+    position: relative;
+    background-color: transparent;
+    --logoColor:rgb(250, 250, 250);
+    --logoStarCenterColor:  var(--logoColor);
+    --logoStarLeftColor:  var(--logoColor);
+    --logoStarRightColor:  var(--logoColor);
+    --logoMountainLeft:  var(--logoColor);
+    --logoMountainCenter:  var(--logoColor);
+    --logoMountainRight:  var(--logoColor);
+    --logoStroke:  rgb(248, 248, 248);
+}
+
+/* ----------- Navigation Bar ----------- */
+
+.navList{
+    font-size: 1.2rem;
+}
+
+/* ----------- Menu button ----------- */
+
+#menu {
+    position: relative;
+    width: var(--iconMenuSize);
+    height: var(--iconMenuSize);
+    background-color: var(--iconBackgroundColor1);
+    background-image: var(--iconBackgroundGradient);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 1em rgb(151, 77, 7);
+}
+
+/* ----------- Colored Bar ----------- */
+
+#coloredBar {
+    position: relative;
+    height: 1px;
+    background-image: var(--coloredBar1);
+    border-radius: 50% 0;
+}
+
+#coloredBar::before {
+    content: '';
+    inset: -1px;
+    width: 100%;
+    position: absolute;
+    background-image: var(--coloredBar1);  
+    z-index: -1;
+    filter: blur(3px);
+}
+
+/* ----------- -----------page ----------- ----------- */
+
+.page{
+    padding-inline: clamp(1rem, 8vw,6rem);
+    padding-block-start: 1rem;
+}
+/* ----------- accueil ----------- */
+h1 span{
+    font-size: 0.8em;
+    color: var(--fontColorLess);
+}
+#visitCard{
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+#welcomePhoto{
+    max-width: 15rem;
+}
+
+/* ----------- section softSkill ----------- */
+
+#softSkillsSection div{
+    padding-block-start: 2rem;
+}
+
+/* ----------- section careerSection Parcours ----------- */
+#careerSection div{
+    padding-block-start: 2rem;
+    border: solid 2px;
 }
