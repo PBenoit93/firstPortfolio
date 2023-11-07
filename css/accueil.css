@@ -239,7 +239,7 @@ h1 span{
     align-items: center;
 }
 #visitCard ul{
-    display: block;
+    line-height: 2rem;
 }
 #welcomePhoto{
     max-width: 15rem;
