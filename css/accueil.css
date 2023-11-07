@@ -236,6 +236,10 @@ h1 span{
 #visitCard{
     margin-top: 3rem;
     justify-content: space-around;
+    align-items: center;
+}
+#visitCard ul{
+    display: block;
 }
 #welcomePhoto{
     max-width: 15rem;
