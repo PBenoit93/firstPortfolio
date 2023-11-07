@@ -254,5 +254,5 @@ h1 span{
 /* ----------- section careerSection Parcours ----------- */
 #careerSection div{
     padding-block-start: 2rem;
-    border: solid 2px;
+    margin-block: 1rem;
 }
